@@ -31,10 +31,11 @@ total_time = end_time - start_time
 running = False
 thread.join()
 
+constant_voltage =  5.23 #This value was tested using Multimeter device.
 avg = sum(values) / len(values)
-energy = avg * total_time * 5.23
-energy_base = energy * 0.60
-power= avg * 5.23 
+energy = avg * total_time * constant_voltage
+energy_base = energy * 0.60 # 0.6 amp is the current amount when there is not background/frontgound process
+power= avg * constant_voltage
 
 print('Power: ' + str(power))
 print('Energy: ' + str(energy))
