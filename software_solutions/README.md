@@ -2,7 +2,6 @@
 
 Our C application "all_software_measuring" contains the three purposed software based energy methods and three workloads scenarios (games, web, social media).
 
-
 # compile our C/C++ application and execute it on an Android phone:
 1. Install android-ndk
 2. Install platform-tools >> for "adb"
@@ -23,3 +22,6 @@ Our C application "all_software_measuring" contains the three purposed software 
 - cd /data/data/com.termux/files/home
 - gcc -o app_name c_app.c
 - ./app_name
+
+# Or simply just run the script in the terminal: 
+/run_apps.sh
